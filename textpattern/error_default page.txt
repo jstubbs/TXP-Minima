@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->  
+  
+<head>
+	<!-- page title and metas -->
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+    <meta name="description" content="">
+    <meta name="generator" content="Textpattern CMS">
+    <txp:if_search>
+        <meta name="robots" content="none">
+    <txp:else />
+    <txp:if_status status="404">
+		<title><txp:site_name />: <txp:error_status /></title>
+	<txp:else />
+    <txp:if_category>
+        <meta name="robots" content="noindex, follow, noodp, noydir">
+    <txp:else />
+    <txp:if_author>
+        <meta name="robots" content="noindex, follow, noodp, noydir">
+    <txp:else />
+        <meta name="robots" content="index, follow, noodp, noydir">
+    </txp:if_author>
+    </txp:if_category>
+    </txp:if_status>
+    </txp:if_search>
+    
+    <title><txp:page_title /></title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="<txp:site_url />stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="<txp:site_url />stylesheets/site.css">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<!-- BIG FAVICONS - ADD A 64x64PX FAVICON.PNG TO /IMAGES/SITE/ -->
+	<!-- http://nashape.com/blog/2012/09/12/big-favicons/ -->
+	<link rel="icon" type="image/png" href="/images/site/favicon.png" />
+	
+	<!-- JS -->
+	<script src="<txp:site_url />javascripts/modernizr.foundation.js"></script>
+	
+	<!-- Feeds -->
+	<txp:feed_link flavor="atom" format="link" label="Atom" />
+	<txp:feed_link flavor="rss" format="link" label="RSS" />
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Canonical -->
+    <txp:if_section name="">
+        <link rel="canonical" href="<txp:site_url />">
+    <txp:else />
+        <txp:if_individual_article>
+            <link rel="canonical" href="<txp:permlink />">
+        <txp:else />
+            <link rel="canonical" href="<txp:section url='1' />">
+        </txp:if_individual_article>
+    </txp:if_section>
+    
+    <!-- ADD ANY FONTS (TYPEKIT)  -->
+	
+	<!-- ADD GOOGLE ANALYTICS FORM -->
+</head>
+
+<body>
+	
+<div id="masthead">
+	<div class="row">
+		<div class="six columns centered">
+			<div id="pagetop">
+				<h1><a href="<txp:site_url />" rel="home"><txp:site_name /></a></h1>
+			</div>
+		</div><!-- end six columns -->
+	</div><!-- end row -->
+</div><!-- end masthead -->
+
+<div id="primary">
+	<div class="row">
+		<div class="six columns centered text-center">
+			<h1><txp:error_status /></h1>
+			<p><txp:error_message /></p>
+		</div><!-- end six columns -->
+	</div><!-- end row -->
+</div><!-- end primary -->
+
+<div id="footer">
+	<div class="row">
+		<div class="six columns centered">
+			<div id="about">
+				<ul class="social">
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Flickr</a></li>
+					<li><a href="#">Vimeo</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Google+</a></li>
+				</ul>
+			</div><!-- end about -->
+		</div><!-- end six columns -->
+	</div><!-- end row -->
+</div><!-- end footer -->
+
+<!-- JS -->
+<script src="<txp:site_url />javascripts/jquery.js"></script>
+<script src="<txp:site_url />javascripts/foundation.min.js"></script>
+<script src="<txp:site_url />javascripts/app.js"></script>
+
+</body>
+</html>

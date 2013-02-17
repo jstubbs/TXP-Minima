@@ -1,0 +1,175 @@
+/* Structure */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000;
+	background: #fff;
+}
+
+#pagetop {
+	margin: 20px 0;
+	border-bottom: 4px double #000;
+}
+
+#primary {
+	background: transparent;
+}
+
+#about {
+	margin: 20px 0;
+	padding: 20px 0;
+	border-top: 4px double #000;
+	text-align: center;
+}
+
+/* Typography */
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#masthead h1 {
+	text-align: center;
+	font-size: 66px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#primary h1 {
+	font-size: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+blockquote, blockquote p {
+	color: #000;
+	font-style: italic;
+	font-weight: normal;
+}
+
+blockquote {
+	padding-top: 0;
+	padding-right: 0;
+	margin-top: 10px;
+	margin-left: 0px;
+	border-left: 1px solid #000;
+}
+
+div.entry p {
+   text-align: center;
+}
+
+p.linkdate, p.videodate, p.mediadate, p.blogdate {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* Misc */
+
+.entry {	
+	padding-bottom: 20px;
+}
+
+.media, .blog, .link, .quote, .video {
+	border-bottom: 1px solid #000;
+}
+
+#primary .link, #primary .quote, #primary .blog {
+	padding: 10px 0;
+}
+
+#primary .quote p.quoteauthor {
+	margin: 0;
+}
+
+/* Media */
+
+.image {
+	display: block;
+	background: transparent;
+	text-align: center;
+}
+
+/* Links */
+a, a:hover, a:focus {
+	color: #f10000;
+}
+
+a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+.image a:hover {
+	border-bottom: none;
+}
+
+#primary h1 a {
+	color: #000;
+}
+
+#primary h1 a:hover {
+	color: #f10000;
+	border-bottom: none;
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+	-o-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+#masthead h1 a {
+	color: #f10000;
+}
+
+#masthead h1 a:hover {
+	color: #000;
+	border-bottom: none;
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+	-o-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+/* Navigation and lists */
+
+nav#article_nav {
+	padding: 0;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.nav-links {
+	display: inline;
+	text-transform: uppercase;
+}
+
+#article_nav h4 {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+#about ul.social {
+	margin-bottom: 0;
+}
+
+ul.social li {
+	display: inline;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
