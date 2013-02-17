@@ -1,7 +1,7 @@
 /* Structure */
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", Arial, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	color: #000;
@@ -27,21 +27,21 @@ body {
 /* Typography */
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
 }
 
 p {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
 }
 
 #masthead h1 {
 	text-align: center;
 	font-size: 66px;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: Georgia, serif;
 	font-style: normal;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -70,7 +70,7 @@ blockquote {
 }
 
 div.entry p {
-   text-align: center;
+	text-align: center;
 }
 
 p.linkdate, p.videodate, p.mediadate, p.blogdate {
@@ -80,7 +80,7 @@ p.linkdate, p.videodate, p.mediadate, p.blogdate {
 
 /* Misc */
 
-.entry {	
+.entry {
 	padding-bottom: 20px;
 }
 
