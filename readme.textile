@@ -1,0 +1,41 @@
+h1. TXP Mimima
+
+February 17, 2013
+
+Welcome to the latest version of "TXP Minima":http://jonathanstubbs.com/txp-minima/, a simple front-end theme for "Textpattern CMS":http://textpattern.com based on the excellent "Foundation framework by Zurb":http://foundation.zurb.com.
+
+h2. Installation
+
+To install this and use this theme, all you need to do is:
+
+# Install and activate the @glz_custom_fields@ plugin
+# Copy the included @default@, @archive@ and @error_default@ pages *over* your current page templates (back up first if you'd like to revert back to them later)
+# Set up the custom fields as set out in the @/screenshots@ image folder
+# Ensure that you have the current Foundation folders and files (this download includes the current version - Foundation 3.2.0) installed on your server
+# Ensure you edit the page templates to add your own social links, fonts and a large favicon (64x64px) etc...
+# Use the custom fields as indicated when creating/editing your articles
+
+h2. Theme specifics
+
+The TXP Minima theme is designed to be used as a 'tumblelog' style of blog. Users may enjoy the ability to set various pre-set _content types_ (blog, media, video, link, quote) and style each one accordingly.
+
+To change the in-built markup for the content types, simply edit one of the custom field blocks in the @default@ page template.
+
+The stylesheet - @site.css@ - is designed to add to and/or override style rules from @foundation.css@. Foundation by default uses @app.css@ for this and you can copy/paste the style rules to @app.css@ if you prefer.
+
+h2. Updates
+
+Any updates to the theme will be placed on "GitHub":https://github.com/jstubbs/TXP-Minima.
+
+h2. Theme usage
+
+The theme is very easy to change should you wish to do so thanks to Foundation. Sites that use this theme (or a customised version) include:
+
+# http://jonathanstubbs.com/
+# http://piapetterson.com/
+
+h2. Questions/comments
+
+If you have any questions or comments, please post in the "Textpattern Support Forum thread":http://forum.textpattern.com/viewtopic.php?id=39368.
+
+*Enjoy the theme!*
