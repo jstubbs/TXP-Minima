@@ -23,12 +23,6 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="<txp:site_url />style/foundation.min.css">
 	<link rel="stylesheet" href="<txp:site_url />style/site.css">
-
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<!-- BIG FAVICONS - ADD A 64x64PX FAVICON.PNG TO /IMAGES/SITE/ -->
-	<!-- http://nashape.com/blog/2012/09/12/big-favicons/ -->
-	<link rel="icon" type="image/png" href="/images/site/favicon.png" />
 	
 	<!-- JS -->
 	<script src="<txp:site_url />js/modernizr.foundation.js"></script>
