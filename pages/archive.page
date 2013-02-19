@@ -13,23 +13,7 @@
 	<meta name="viewport" content="width=device-width" />
 	<meta name="description" content="">
 	<meta name="generator" content="Textpattern CMS">
-	<txp:if_search>
-		<meta name="robots" content="none">
-	<txp:else />
-	<txp:if_status status="404">
-		<title><txp:site_name />: <txp:error_status /></title>
-	<txp:else />
-	<txp:if_category>
-		<meta name="robots" content="noindex, follow, noodp, noydir">
-	<txp:else />
-	<txp:if_author>
-		<meta name="robots" content="noindex, follow, noodp, noydir">
-	<txp:else />
-		<meta name="robots" content="index, follow, noodp, noydir">
-	</txp:if_author>
-	</txp:if_category>
-	</txp:if_status>
-	</txp:if_search>
+	<meta name="robots" content="index, follow, noodp, noydir">
 	
 	<title><txp:page_title /></title>
 
