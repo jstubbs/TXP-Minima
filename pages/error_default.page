@@ -25,15 +25,14 @@
 	<link rel="stylesheet" href="<txp:site_url />style/site.css">
 	
 	<!-- JS -->
-	<script src="<txp:site_url />js/modernizr.foundation.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	
 	<!-- Feeds -->
 	<txp:feed_link flavor="atom" format="link" label="Atom" />
 	<txp:feed_link flavor="rss" format="link" label="RSS" />
 	
-	<!-- HTML5/Media Queries support for IE < 9 -->
+	<!-- Media Queries support for IE < 9 -->
 	<!--[if lt IE 9]>
-		<script src="<txp:site_url />js/html5shiv.js"></script>
 		<script src="<txp:site_url />js/css3-mediaqueries.js"></script>
 	<![endif]-->
 	
