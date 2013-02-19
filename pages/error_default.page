@@ -35,7 +35,7 @@
 
 <body>
 
-<header class="row">
+<header role="banner" class="row">
 	<div class="six columns centered">
 		<div id="pagetop">
 			<h1><a href="<txp:site_url />" rel="home"><txp:site_name /></a></h1>
@@ -52,7 +52,7 @@
 	</div><!-- end row -->
 </div><!-- end primary -->
 
-<footer class="row">
+<footer role="contentinfo" class="row">
 	<div class="six columns centered">
 		<div id="about">
 			<ul class="social">
