@@ -175,7 +175,7 @@
 	</div><!-- end row -->
 </div><!-- end primary -->
 
-<div id="footer">
+<footer>
 	<div class="row">
 		<div class="six columns centered">
 			<div id="about">
@@ -189,7 +189,7 @@
 			</div><!-- end about -->
 		</div><!-- end six columns -->
 	</div><!-- end row -->
-</div><!-- end footer -->
+</footer>
 
 <!-- JS -->
 <script src="<txp:site_url />js/jquery.js"></script>
