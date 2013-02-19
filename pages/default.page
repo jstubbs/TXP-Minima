@@ -71,107 +71,105 @@
 	</div><!-- end six columns -->
 </header>
 
-<div id="primary">
-	<div class="row">
-		<div class="ten columns centered">
+<main role="main" class="row">
+	<div class="ten columns centered">
 
-					<txp:article limit="10">
-						<article class="<txp:custom_field name='Content_type' />">
+		<txp:article limit="10">
+			<article class="<txp:custom_field name='Content_type' />">
 
-							<txp:if_custom_field name="Content_type" value="media">
-								<div class="row">	
-									<div class="six columns centered">	
-										<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
-										<div class="entry">
-											<txp:excerpt />
-											<p class="mediadate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
-										</div><!-- end entry -->
-									</div><!-- end six columns -->
-								</div><!-- end row -->
-								<div class="image">
-									<txp:body />
-								</div>	
-							</txp:if_custom_field>
+				<txp:if_custom_field name="Content_type" value="media">
+					<div class="row">	
+						<div class="six columns centered">	
+							<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+							<div class="entry">
+								<txp:excerpt />
+								<p class="mediadate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+							</div><!-- end entry -->
+						</div><!-- end six columns -->
+					</div><!-- end row -->
+					<div class="image">
+						<txp:body />
+					</div>	
+				</txp:if_custom_field>
 
-							<txp:if_custom_field name="content_type" value="video"> 	
-								<!-- <div class="row">	 -->
-									<div class="six columns centered">	
-										<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
-										<div class="entry">
-											<txp:body />
-											<p class="videodate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
-										</div><!-- end entry -->
-									</div><!-- end six columns -->
-									<div class="flex-video <txp:custom_field name="Video_meta" />">
-										<txp:custom_field name="Video_embed"  escape="" />
-									</div><!-- end flex-video -->
-								<!-- </div> --><!-- end row -->
-							</txp:if_custom_field>
+				<txp:if_custom_field name="content_type" value="video"> 	
+					<!-- <div class="row">	 -->
+						<div class="six columns centered">	
+							<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+							<div class="entry">
+								<txp:body />
+								<p class="videodate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+							</div><!-- end entry -->
+						</div><!-- end six columns -->
+						<div class="flex-video <txp:custom_field name="Video_meta" />">
+							<txp:custom_field name="Video_embed"  escape="" />
+						</div><!-- end flex-video -->
+					<!-- </div> --><!-- end row -->
+				</txp:if_custom_field>
 
-							<txp:if_custom_field name="content_type" value="blog"> 
-							<div class="row">
-								<div class="six columns centered">
-									<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
-									<div class="entry">
-										<txp:body />
-										<p class="blogdate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
-									</div><!-- end entry -->
-								</div><!-- end six columns -->
-							</div><!-- end row -->
-							</txp:if_custom_field>
+				<txp:if_custom_field name="content_type" value="blog"> 
+				<div class="row">
+					<div class="six columns centered">
+						<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+						<div class="entry">
+							<txp:body />
+							<p class="blogdate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+						</div><!-- end entry -->
+					</div><!-- end six columns -->
+				</div><!-- end row -->
+				</txp:if_custom_field>
 
-							<txp:if_custom_field name="content_type" value="link">
-							<div class="row">	
-								<div class="six columns centered">
-									<h1><txp:permlink title='Permanent link for <txp:title />' ><txp:title /></txp:permlink></h1>
-									<div class="entry">
-										<txp:body />
-										<p class="linkdate"><a href="<txp:custom_field name="Link" />"><txp:custom_field name="Link_title" /></a>  - <txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
-									</div><!-- end entry -->
-								</div><!-- end six columns -->
-							</div><!-- end row -->	
-							</txp:if_custom_field>
+				<txp:if_custom_field name="content_type" value="link">
+				<div class="row">	
+					<div class="six columns centered">
+						<h1><txp:permlink title='Permanent link for <txp:title />' ><txp:title /></txp:permlink></h1>
+						<div class="entry">
+							<txp:body />
+							<p class="linkdate"><a href="<txp:custom_field name="Link" />"><txp:custom_field name="Link_title" /></a>  - <txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+						</div><!-- end entry -->
+					</div><!-- end six columns -->
+				</div><!-- end row -->	
+				</txp:if_custom_field>
 
-							<txp:if_custom_field name="content_type" value="quote"> 
-							<div class="row">	
-								<div class="six columns centered">
-									<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
-									<div class="entry">
-										<txp:body />
-										<p class="quoteauthor"><a href="<txp:custom_field name="Quote_link" />"><txp:custom_field name="Quote_author" /></a> - <txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
-									</div><!-- end entry -->
-								</div><!-- end six columns -->
-							</div><!-- end row -->	
-							</txp:if_custom_field>
-							
-						</article>
-					</txp:article>
+				<txp:if_custom_field name="content_type" value="quote"> 
+				<div class="row">	
+					<div class="six columns centered">
+						<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+						<div class="entry">
+							<txp:body />
+							<p class="quoteauthor"><a href="<txp:custom_field name="Quote_link" />"><txp:custom_field name="Quote_author" /></a> - <txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+						</div><!-- end entry -->
+					</div><!-- end six columns -->
+				</div><!-- end row -->	
+				</txp:if_custom_field>
+				
+			</article>
+		</txp:article>
 
-					<txp:if_individual_article>
-						<div class="row">
-							<div class="six columns centered text-center">
-							<nav role="navigation" id="article_nav">
-								<div class="nav-links"><h4>&#8592; <txp:link_to_prev showalways="1"><txp:prev_title /></txp:link_to_prev></h4></div>
-								<div class="nav-links"><h4><txp:link_to_next showalways="1"><txp:next_title /></txp:link_to_next> &#8594;</h4></div>
-							</nav><!-- end nav -->
-							</div><!-- end six columns -->
-						</div><!-- end navigation row -->
-					</txp:if_individual_article>
-					
-					<txp:if_article_list>
-						<div class="row">	
-							<div class="six columns centered text-center">
-							<nav role="navigation" id="article_nav">
-								<div class="nav-links"><h4>&#8592; <txp:newer showalways="1"><txp:text item="newer page" /></txp:newer></h4></div>
-								<div class="nav-links"><h4><txp:older showalways="1"><txp:text item="older page" /></txp:older> &#8594;</h4></div>
-							</nav><!-- end nav -->
-							</div><!-- end six columns -->
-						</div><!-- end navigation row -->
-					</txp:if_article_list>
+		<txp:if_individual_article>
+			<div class="row">
+				<div class="six columns centered text-center">
+				<nav role="navigation" id="article_nav">
+					<div class="nav-links"><h4>&#8592; <txp:link_to_prev showalways="1"><txp:prev_title /></txp:link_to_prev></h4></div>
+					<div class="nav-links"><h4><txp:link_to_next showalways="1"><txp:next_title /></txp:link_to_next> &#8594;</h4></div>
+				</nav><!-- end nav -->
+				</div><!-- end six columns -->
+			</div><!-- end navigation row -->
+		</txp:if_individual_article>
+		
+		<txp:if_article_list>
+			<div class="row">	
+				<div class="six columns centered text-center">
+				<nav role="navigation" id="article_nav">
+					<div class="nav-links"><h4>&#8592; <txp:newer showalways="1"><txp:text item="newer page" /></txp:newer></h4></div>
+					<div class="nav-links"><h4><txp:older showalways="1"><txp:text item="older page" /></txp:older> &#8594;</h4></div>
+				</nav><!-- end nav -->
+				</div><!-- end six columns -->
+			</div><!-- end navigation row -->
+		</txp:if_article_list>
 
-		</div><!-- end ten columns -->
-	</div><!-- end row -->
-</div><!-- end primary -->
+	</div><!-- end ten columns -->
+</main>
 
 <footer role="contentinfo" class="row">
 	<div class="six columns centered">

@@ -43,14 +43,12 @@
 	</div><!-- end six columns -->
 </header>
 
-<div id="primary">
-	<div class="row">
-		<div class="six columns centered text-center">
-			<h1><txp:error_status /></h1>
-			<p><txp:error_message /></p>
-		</div><!-- end six columns -->
-	</div><!-- end row -->
-</div><!-- end primary -->
+<main role="main" class="row">
+	<div class="six columns centered text-center">
+		<h1><txp:error_status /></h1>
+		<p><txp:error_message /></p>
+	</div><!-- end six columns -->
+</main>
 
 <footer role="contentinfo" class="row">
 	<div class="six columns centered">

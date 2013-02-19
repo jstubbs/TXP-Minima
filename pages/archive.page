@@ -50,20 +50,18 @@
 	</div><!-- end six columns -->
 </header>
 
-<div id="primary">
-	<div class="row">
-		<div class="six columns centered text-center">
-			<article>
-				<txp:article_custom section="journal" limit="9999">
-					<txp:if_different>
-						<h1><txp:posted format="%B %Y" /></h1>
-					</txp:if_different>
-					<p><txp:posted format="%b %e" /> - <txp:permlink><txp:title /></txp:permlink></p>
-				</txp:article_custom>
-			</article>
-		</div><!-- end twelve columns -->
-	</div><!-- end row -->
-</div><!-- end primary -->
+<main role="main" class="row">
+	<div class="six columns centered text-center">
+		<article>
+			<txp:article_custom section="journal" limit="9999">
+				<txp:if_different>
+					<h1><txp:posted format="%B %Y" /></h1>
+				</txp:if_different>
+				<p><txp:posted format="%b %e" /> - <txp:permlink><txp:title /></txp:permlink></p>
+			</txp:article_custom>
+		</article>
+	</div><!-- end twelve columns -->
+</main>
 
 <footer role="contentinfo" class="row">
 	<div class="six columns centered">
