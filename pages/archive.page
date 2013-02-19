@@ -42,14 +42,12 @@
 
 <body>
 
-<header>
-	<div class="row">
-		<div class="six columns centered">
-			<div id="pagetop">
-				<h1><a href="<txp:site_url />" rel="home"><txp:site_name /></a></h1>
-			</div>
-		</div><!-- end six columns -->
-	</div><!-- end row -->
+<header class="row">
+	<div class="six columns centered">
+		<div id="pagetop">
+			<h1><a href="<txp:site_url />" rel="home"><txp:site_name /></a></h1>
+		</div>
+	</div><!-- end six columns -->
 </header>
 
 <div id="primary">
@@ -67,20 +65,18 @@
 	</div><!-- end row -->
 </div><!-- end primary -->
 
-<footer>
-	<div class="row">
-		<div class="six columns centered">
-			<div id="about">
-				<ul class="social">
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Flickr</a></li>
-					<li><a href="#">Vimeo</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Google+</a></li>
-				</ul>
-			</div><!-- end about -->
-		</div><!-- end six columns -->
-	</div><!-- end row -->
+<footer class="row">
+	<div class="six columns centered">
+		<div id="about">
+			<ul class="social">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Vimeo</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Google+</a></li>
+			</ul>
+		</div><!-- end about -->
+	</div><!-- end six columns -->
 </footer>
 
 <!-- JS -->
