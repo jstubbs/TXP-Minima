@@ -63,7 +63,7 @@
 
 <body id="home">
 
-<div id="masthead">
+<header>
 	<div class="row">
 		<div class="six columns centered">
 			<div id="pagetop">
@@ -71,7 +71,7 @@
 			</div>
 		</div><!-- end six columns -->
 	</div><!-- end row -->
-</div><!-- end masthead -->
+</header>
 
 <div id="primary">
 	<div class="row">
