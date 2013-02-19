@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  
+
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title><txp:page_title /></title>
 	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
 	<meta name="generator" content="Textpattern CMS">
 	<meta name="robots" content="index, follow, noodp, noydir">
 
@@ -43,7 +41,7 @@
 </head>
 
 <body>
-	
+
 <div id="masthead">
 	<div class="row">
 		<div class="six columns centered">
@@ -58,13 +56,13 @@
 	<div class="row">
 		<div class="six columns centered text-center">
 			<article>
-				<txp:article_custom section="journal" limit="9999">					
+				<txp:article_custom section="journal" limit="9999">
 					<txp:if_different>
 						<h1><txp:posted format="%B %Y" /></h1>
 					</txp:if_different>
 					<p><txp:posted format="%b %e" /> - <txp:permlink><txp:title /></txp:permlink></p>
 				</txp:article_custom>
-			</article>			
+			</article>
 		</div><!-- end twelve columns -->
 	</div><!-- end row -->
 </div><!-- end primary -->

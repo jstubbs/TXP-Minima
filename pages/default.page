@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  
+
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title><txp:page_title /></title>
 	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
 	<meta name="generator" content="Textpattern CMS">
 
 	<txp:if_search>
@@ -64,7 +62,7 @@
 </head>
 
 <body id="home">
-	
+
 <div id="masthead">
 	<div class="row">
 		<div class="six columns centered">
@@ -81,7 +79,7 @@
 
 					<txp:article limit="10">
 						<article class="<txp:custom_field name='Content_type' />">
-		
+
 							<txp:if_custom_field name="Content_type" value="media">
 								<div class="row">	
 									<div class="six columns centered">	
@@ -96,7 +94,7 @@
 									<txp:body />
 								</div>	
 							</txp:if_custom_field>
-							
+
 							<txp:if_custom_field name="content_type" value="video"> 	
 								<!-- <div class="row">	 -->
 									<div class="six columns centered">	
@@ -111,19 +109,19 @@
 									</div><!-- end flex-video -->
 								<!-- </div> --><!-- end row -->
 							</txp:if_custom_field>
-		
+
 							<txp:if_custom_field name="content_type" value="blog"> 
-							<div class="row">	
+							<div class="row">
 								<div class="six columns centered">
-									<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>	
+									<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
 									<div class="entry">
 										<txp:body />
 										<p class="blogdate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
 									</div><!-- end entry -->
 								</div><!-- end six columns -->
-							</div><!-- end row -->	
+							</div><!-- end row -->
 							</txp:if_custom_field>
-							
+
 							<txp:if_custom_field name="content_type" value="link">
 							<div class="row">	
 								<div class="six columns centered">
@@ -135,7 +133,7 @@
 								</div><!-- end six columns -->
 							</div><!-- end row -->	
 							</txp:if_custom_field>
-							
+
 							<txp:if_custom_field name="content_type" value="quote"> 
 							<div class="row">	
 								<div class="six columns centered">
@@ -150,7 +148,7 @@
 							
 						</article>
 					</txp:article>
-					
+
 					<txp:if_individual_article>
 						<div class="row">
 							<div class="six columns centered text-center">
@@ -168,11 +166,11 @@
 							<nav role="navigation" id="article_nav">
 								<div class="nav-links"><h4>&#8592; <txp:newer showalways="1"><txp:text item="newer page" /></txp:newer></h4></div>
 								<div class="nav-links"><h4><txp:older showalways="1"><txp:text item="older page" /></txp:older> &#8594;</h4></div>
-							</nav><!-- end nav -->	
+							</nav><!-- end nav -->
 							</div><!-- end six columns -->
 						</div><!-- end navigation row -->
 					</txp:if_article_list>
-		
+
 		</div><!-- end ten columns -->
 	</div><!-- end row -->
 </div><!-- end primary -->
