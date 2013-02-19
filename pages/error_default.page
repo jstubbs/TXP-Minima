@@ -4,34 +4,34 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->  
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   
 <head>
 	<!-- page title and metas -->
 	<meta charset="utf-8" />
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
-    <meta name="description" content="">
-    <meta name="generator" content="Textpattern CMS">
-    <txp:if_search>
-        <meta name="robots" content="none">
-    <txp:else />
-    <txp:if_status status="404">
+	<meta name="description" content="">
+	<meta name="generator" content="Textpattern CMS">
+	<txp:if_search>
+		<meta name="robots" content="none">
+	<txp:else />
+	<txp:if_status status="404">
 		<title><txp:site_name />: <txp:error_status /></title>
 	<txp:else />
-    <txp:if_category>
-        <meta name="robots" content="noindex, follow, noodp, noydir">
-    <txp:else />
-    <txp:if_author>
-        <meta name="robots" content="noindex, follow, noodp, noydir">
-    <txp:else />
-        <meta name="robots" content="index, follow, noodp, noydir">
-    </txp:if_author>
-    </txp:if_category>
-    </txp:if_status>
-    </txp:if_search>
-    
-    <title><txp:page_title /></title>
+	<txp:if_category>
+		<meta name="robots" content="noindex, follow, noodp, noydir">
+	<txp:else />
+	<txp:if_author>
+		<meta name="robots" content="noindex, follow, noodp, noydir">
+	<txp:else />
+		<meta name="robots" content="index, follow, noodp, noydir">
+	</txp:if_author>
+	</txp:if_category>
+	</txp:if_status>
+	</txp:if_search>
+	
+	<title><txp:page_title /></title>
 
 	<!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic">
@@ -59,17 +59,17 @@
 	<![endif]-->
 	
 	<!-- Canonical -->
-    <txp:if_section name="">
-        <link rel="canonical" href="<txp:site_url />">
-    <txp:else />
-        <txp:if_individual_article>
-            <link rel="canonical" href="<txp:permlink />">
-        <txp:else />
-            <link rel="canonical" href="<txp:section url='1' />">
-        </txp:if_individual_article>
-    </txp:if_section>
-    
-    <!-- ADD ANY FONTS (TYPEKIT)  -->
+	<txp:if_section name="">
+		<link rel="canonical" href="<txp:site_url />">
+	<txp:else />
+		<txp:if_individual_article>
+			<link rel="canonical" href="<txp:permlink />">
+		<txp:else />
+			<link rel="canonical" href="<txp:section url='1' />">
+		</txp:if_individual_article>
+	</txp:if_section>
+	
+	<!-- ADD ANY FONTS (TYPEKIT)  -->
 	
 	<!-- ADD GOOGLE ANALYTICS FORM -->
 </head>
