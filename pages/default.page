@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title><txp:page_title /></title>
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width">
+	<meta name="generator" content="Textpattern CMS">
+
+	<txp:if_search>
+		<meta name="robots" content="none">
+	<txp:else />
+	<txp:if_status status="404">
+		<title><txp:site_name />: <txp:error_status /></title>
+	<txp:else />
+	<txp:if_category>
+		<meta name="robots" content="noindex, follow, noodp, noydir">
+	<txp:else />
+	<txp:if_author>
+		<meta name="robots" content="noindex, follow, noodp, noydir">
+	<txp:else />
+		<meta name="robots" content="index, follow, noodp, noydir">
+	</txp:if_author>
+	</txp:if_category>
+	</txp:if_status>
+	</txp:if_search>
+
+	<!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="<txp:site_url />style/foundation.min.css">
+	<link rel="stylesheet" href="<txp:site_url />style/site.css">
+
+	<!-- JS -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+	<!-- Feeds -->
+	<txp:feed_link flavor="atom" format="link" label="Atom" />
+	<txp:feed_link flavor="rss" format="link" label="RSS" />
+
+	<!-- Media Queries support for IE < 9 -->
+	<!--[if lt IE 9]>
+		<script src="<txp:site_url />js/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- Canonical -->
+	<txp:if_section name="">
+		<link rel="canonical" href="<txp:site_url />">
+	<txp:else />
+		<txp:if_individual_article>
+			<link rel="canonical" href="<txp:permlink />">
+		<txp:else />
+			<link rel="canonical" href="<txp:section url='1' />">
+		</txp:if_individual_article>
+	</txp:if_section>
+</head>
+
+<body id="home">
+
+<header role="banner" class="row">
+	<div class="six columns centered">
+		<div id="pagetop">
+			<h1><a href="<txp:site_url />" rel="home"><txp:site_name /></a></h1>
+		</div>
+	</div><!-- end six columns -->
+</header>
+
+<main role="main" class="row">
+	<div class="ten columns centered">
+
+		<txp:article limit="10">
+			<article class="<txp:custom_field name='Content_type' />">
+
+				<txp:if_custom_field name="Content_type" value="media">
+					<div class="row">	
+						<div class="six columns centered">	
+							<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+							<div class="entry">
+								<txp:excerpt />
+								<p class="mediadate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+							</div><!-- end entry -->
+						</div><!-- end six columns -->
+					</div><!-- end row -->
+					<div class="image">
+						<txp:body />
+					</div>	
+				</txp:if_custom_field>
+
+				<txp:if_custom_field name="content_type" value="video"> 	
+					<!-- <div class="row">	 -->
+						<div class="six columns centered">	
+							<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+							<div class="entry">
+								<txp:body />
+								<p class="videodate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+							</div><!-- end entry -->
+						</div><!-- end six columns -->
+						<div class="flex-video <txp:custom_field name="Video_meta" />">
+							<txp:custom_field name="Video_embed"  escape="" />
+						</div><!-- end flex-video -->
+					<!-- </div> --><!-- end row -->
+				</txp:if_custom_field>
+
+				<txp:if_custom_field name="content_type" value="blog"> 
+				<div class="row">
+					<div class="six columns centered">
+						<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+						<div class="entry">
+							<txp:body />
+							<p class="blogdate"><txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+						</div><!-- end entry -->
+					</div><!-- end six columns -->
+				</div><!-- end row -->
+				</txp:if_custom_field>
+
+				<txp:if_custom_field name="content_type" value="link">
+				<div class="row">	
+					<div class="six columns centered">
+						<h1><txp:permlink title='Permanent link for <txp:title />' ><txp:title /></txp:permlink></h1>
+						<div class="entry">
+							<txp:body />
+							<p class="linkdate"><a href="<txp:custom_field name="Link" />"><txp:custom_field name="Link_title" /></a>  - <txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+						</div><!-- end entry -->
+					</div><!-- end six columns -->
+				</div><!-- end row -->	
+				</txp:if_custom_field>
+
+				<txp:if_custom_field name="content_type" value="quote"> 
+				<div class="row">	
+					<div class="six columns centered">
+						<h1><txp:permlink title='Permanent link for <txp:title />'><txp:title /></txp:permlink></h1>
+						<div class="entry">
+							<txp:body />
+							<p class="quoteauthor"><a href="<txp:custom_field name="Quote_link" />"><txp:custom_field name="Quote_author" /></a> - <txp:permlink title='Permanent link for <txp:title />'><txp:posted /></txp:permlink></p>
+						</div><!-- end entry -->
+					</div><!-- end six columns -->
+				</div><!-- end row -->	
+				</txp:if_custom_field>
+				
+			</article>
+		</txp:article>
+
+		<txp:if_individual_article>
+			<div class="row">
+				<div class="six columns centered text-center">
+				<nav role="navigation" id="article_nav">
+					<div class="nav-links"><h4>&#8592; <txp:link_to_prev showalways="1"><txp:prev_title /></txp:link_to_prev></h4></div>
+					<div class="nav-links"><h4><txp:link_to_next showalways="1"><txp:next_title /></txp:link_to_next> &#8594;</h4></div>
+				</nav><!-- end nav -->
+				</div><!-- end six columns -->
+			</div><!-- end navigation row -->
+		</txp:if_individual_article>
+		
+		<txp:if_article_list>
+			<div class="row">	
+				<div class="six columns centered text-center">
+				<nav role="navigation" id="article_nav">
+					<div class="nav-links"><h4>&#8592; <txp:newer showalways="1"><txp:text item="newer page" /></txp:newer></h4></div>
+					<div class="nav-links"><h4><txp:older showalways="1"><txp:text item="older page" /></txp:older> &#8594;</h4></div>
+				</nav><!-- end nav -->
+				</div><!-- end six columns -->
+			</div><!-- end navigation row -->
+		</txp:if_article_list>
+
+	</div><!-- end ten columns -->
+</main>
+
+<footer role="contentinfo" class="row">
+	<div class="six columns centered">
+		<div id="about">
+			<ul class="social">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Vimeo</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Google+</a></li>
+			</ul>
+		</div><!-- end about -->
+	</div><!-- end six columns -->
+</footer>
+
+<!-- JS -->
+<script src="<txp:site_url />js/jquery.js"></script>
+<script src="<txp:site_url />js/foundation.min.js"></script>
+<script src="<txp:site_url />js/app.js"></script>
+
+</body>
+</html>

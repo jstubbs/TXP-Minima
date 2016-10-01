@@ -13,7 +13,7 @@ body {
 	border-bottom: 4px double #000;
 }
 
-#primary {
+main {
 	background: transparent;
 }
 
@@ -38,7 +38,7 @@ p {
 	font-weight: normal;
 }
 
-#masthead h1 {
+header h1 {
 	text-align: center;
 	font-size: 66px;
 	font-family: Georgia, serif;
@@ -47,7 +47,7 @@ p {
 	text-transform: uppercase;
 }
 
-#primary h1 {
+main h1 {
 	font-size: 26px;
 	text-align: center;
 	text-transform: uppercase;
@@ -88,11 +88,11 @@ p.linkdate, p.videodate, p.mediadate, p.blogdate {
 	border-bottom: 1px solid #000;
 }
 
-#primary .link, #primary .quote, #primary .blog {
+main .link, #primary .quote, #primary .blog {
 	padding: 10px 0;
 }
 
-#primary .quote p.quoteauthor {
+main .quote p.quoteauthor {
 	margin: 0;
 }
 
@@ -118,11 +118,11 @@ a:hover {
 	border-bottom: none;
 }
 
-#primary h1 a {
+main h1 a {
 	color: #000;
 }
 
-#primary h1 a:hover {
+main h1 a:hover {
 	color: #f10000;
 	border-bottom: none;
 	-webkit-transition: color .2s linear;
@@ -131,11 +131,11 @@ a:hover {
 	transition: color .2s linear;
 }
 
-#masthead h1 a {
+header h1 a {
 	color: #f10000;
 }
 
-#masthead h1 a:hover {
+header h1 a:hover {
 	color: #000;
 	border-bottom: none;
 	-webkit-transition: color .2s linear;

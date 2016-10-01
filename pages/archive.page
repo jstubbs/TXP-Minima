@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title><txp:page_title /></title>
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width">
+	<meta name="generator" content="Textpattern CMS">
+	<meta name="robots" content="index, follow, noodp, noydir">
+
+	<!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="<txp:site_url />style/foundation.min.css">
+	<link rel="stylesheet" href="<txp:site_url />style/site.css">
+
+	<!-- JS -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+	<!-- Feeds -->
+	<txp:feed_link flavor="atom" format="link" label="Atom" />
+	<txp:feed_link flavor="rss" format="link" label="RSS" />
+
+	<!-- Media Queries support for IE < 9 -->
+	<!--[if lt IE 9]>
+		<script src="<txp:site_url />js/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- Canonical -->
+	<txp:if_individual_article>
+		<link rel="canonical" href="<txp:permlink />">
+	<txp:else />
+		<link rel="canonical" href="<txp:section url='1' />">
+	</txp:if_individual_article>
+</head>
+
+<body>
+
+<header role="banner" class="row">
+	<div class="six columns centered">
+		<div id="pagetop">
+			<h1><a href="<txp:site_url />" rel="home"><txp:site_name /></a></h1>
+		</div>
+	</div><!-- end six columns -->
+</header>
+
+<main role="main" class="row">
+	<div class="six columns centered text-center">
+		<article>
+			<txp:article_custom section="journal" limit="9999">
+				<txp:if_different>
+					<h1><txp:posted format="%B %Y" /></h1>
+				</txp:if_different>
+				<p><txp:posted format="%b %e" /> - <txp:permlink><txp:title /></txp:permlink></p>
+			</txp:article_custom>
+		</article>
+	</div><!-- end twelve columns -->
+</main>
+
+<footer role="contentinfo" class="row">
+	<div class="six columns centered">
+		<div id="about">
+			<ul class="social">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Vimeo</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Google+</a></li>
+			</ul>
+		</div><!-- end about -->
+	</div><!-- end six columns -->
+</footer>
+
+<!-- JS -->
+<script src="<txp:site_url />js/jquery.js"></script>
+<script src="<txp:site_url />js/foundation.min.js"></script>
+<script src="<txp:site_url />js/app.js"></script>
+
+</body>
+</html>
